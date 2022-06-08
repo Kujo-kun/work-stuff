@@ -1,0 +1,80 @@
+body {
+  background: #393e46;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+button {
+  padding: 7px 12px;
+  border: 1px solid #00adb5;
+  background: #222831;
+  border-radius: 4px;
+  color: #00adb5;
+  white-space: nowrap;
+}
+.button-1 {
+  position: absolute;
+  transition: all 200ms ease-out;
+}
+.button-1:hover {
+  background: #2a323c;
+}
+.button-2 {
+  background: rgba(42, 50, 60, 0);
+}
+.button-2:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.button-3:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.button-3 {
+  position: absolute;
+}
+.button-2 {
+  margin: 0 auto;
+}
+.button-2--animation {
+  animation: myOrbit 4s linear infinite;
+}
+/* @keyframes right-left {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(800px);
+  }
+} */
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+.hidden {
+  display: none;
+}
+
+.victory {
+  background: #2e2e8e;
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid #32a5f7;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.victory p {
+  color: #fff;
+  font-size: 3rem;
+}
+.buttonArmy {
+  position: "absolute";
+  transition: "all 200ms ease-out;";
+}
+.destroy {
+  position: absolute;
+  transition: all 200ms ease-out;
+}
